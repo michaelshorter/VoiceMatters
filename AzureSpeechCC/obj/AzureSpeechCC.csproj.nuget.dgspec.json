@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/wordcloud/WordCloud/AzureSpeechCC/AzureSpeechCC.csproj": {}
+  },
+  "projects": {
+    "/home/wordcloud/WordCloud/AzureSpeechCC/AzureSpeechCC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/wordcloud/WordCloud/AzureSpeechCC/AzureSpeechCC.csproj",
+        "projectName": "AzureSpeechCC",
+        "projectPath": "/home/wordcloud/WordCloud/AzureSpeechCC/AzureSpeechCC.csproj",
+        "packagesPath": "/home/wordcloud/.nuget/packages/",
+        "outputPath": "/home/wordcloud/WordCloud/AzureSpeechCC/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/wordcloud/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.CognitiveServices.Speech": {
+              "target": "Package",
+              "version": "[1.22.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/wordcloud/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
