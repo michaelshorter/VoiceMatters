@@ -2,21 +2,22 @@
 The WordCloud, Uberblick and Confidence all in one place.... in cardboard boxes.
  
   ******************************************************************************
-HOW TO RUN ALL SCRIPTS
+## HOW TO RUN ALL SCRIPTS
 
-1. Cost and Word Count.
-	
- python3 WordCount.py
+### Cost and Word Count.
+'''	
+python3 WordCount.py
 python3 CostCounter.py
+'''
 
-2. Last Word + Confidence
+### Last Word + Confidence
    	/AzureSpeechCC/ dotnet run
    	sudo python3 write_to_screen.py
 
-3. WordCloud
+### WordCloud
    	sudo python3 WordCloudGenerator.py
 
-4. Summary, Themes, Haiku and Image
+### Summary, Themes, Haiku and Image
 	sudo python3 main.py
    	Then open all the .png files 
 
