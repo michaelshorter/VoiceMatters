@@ -44,23 +44,23 @@ Your identification has been saved in /home/b/.ssh/id_rsa.
 Your public key has been saved in /home/b/.ssh/id_rsa.pub.
 
 display your ssh key with following line and copy it
-
+```
 $ cat ~/.ssh/id_rsa.pub
-
+```
 insert your new ssh key into your git account - setting ssh keys
 
-3. clone the git repository with ssh:
+**3. clone the git repository with ssh:**
 ```
 $ git clone <link> 'WordCloud'
 ```
 
-NETWORK NAME THAT UBEERBLICKS REMEMBER:
+**NETWORK NAME THAT UBEERBLICKS REMEMBER:**
 
 SSID: Uniform Go 5
 Password: InUniform
 
   ******************************************************************************
-ADD NEW WIFI CREDENTIALS
+## ADD NEW WIFI CREDENTIALS
 
 To add a wifi network to the WordCLoud follow the instructions on this link:
 https://linuxconfig.org/ubuntu-20-04-connect-to-wifi-from-command-line
