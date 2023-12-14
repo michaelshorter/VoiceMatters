@@ -182,16 +182,15 @@ To debug it’s useful to look at:
  ******************************************************************************
 ## GENERAL PROCESS
 
-The run.sh file executes everything.
-1. WordCloudGenerator.py .. This reads the contents.txt file, generates a wordcloud, dithers the image to make it E-Ink compatible and finally publishes it to the display.
+| Script | Description |
+| --- | --- |
+| run.sh | This file executes everything |
+| WordCloudGenerator.py | This reads the contents.txt file, generates a wordcloud, dithers the image to make it E-Ink compatible and finally publishes it to the display.|
+| AzureSpeechCC (C# | This file executes everything |
+| write_to_oled.py | This launches the speech to text service. The recognized phrases are published to the contents.txt file. The individiual words are send to the PiOLED via a pipe |
+| reset_button.py | This opens the pipe with AzureSpeechCC and prints the words to the display |
+| WifiStatusLED.py | This runs a script to light an LED when connected to the internet |
 
-2. AzureSpeechCC (C#) ..... This launches the speech to text service. The recognized phrases are published to the contents.txt file. The individiual words are send to the PiOLED via a pipe.
-
-3. write_to_oled.py ....... This opens the pipe with AzureSpeechCC and prints the words to the display.
-
-4. reset_button.py ........ This runs a script that deletes the contents.txt file when a button is pushed.
-   
-5. WifiStatusLED.py ....... This runs a script to light an LED when connected to the internet.
 
 
 ******************************************************************************
