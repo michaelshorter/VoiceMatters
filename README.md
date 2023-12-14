@@ -213,7 +213,7 @@ journalctl -f -u wordcloud.service
 ```
 
 To escape the wordcloud generator in terminal use CTL Z
-<kbd>Control</kbd>
+kbdControlkbd
 "+"
 <kbd>Z<kbd>
 
