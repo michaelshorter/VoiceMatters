@@ -5,8 +5,9 @@ The WordCloud, Uberblick and Confidence all in one place.... in cardboard boxes.
 HOW TO RUN ALL SCRIPTS
 
 1. Cost and Word Count.
-	python3 WordCount.py
-	python3 CostCounter.py
+	
+ python3 WordCount.py
+python3 CostCounter.py
 
 2. Last Word + Confidence
    	/AzureSpeechCC/ dotnet run
