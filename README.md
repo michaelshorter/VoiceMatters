@@ -113,7 +113,7 @@ $ sudo netplan apply
 ```
 
  ******************************************************************************
-LANGUAGE CHANGE
+## LANGUAGE CHANGE
 
 All languages supported are here: https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt-tts
 
@@ -144,7 +144,7 @@ dotnet build
 dotnet run
 ```
  ******************************************************************************
- AUTO RUN ON STARTUP
+ ## AUTO RUN ON STARTUP
  
  This is done using systemd
 There are two start-up files:
@@ -172,29 +172,46 @@ To debug it’s useful to look at:
  
 
  ******************************************************************************
-GENERAL PROCESS
+## GENERAL PROCESS
 
 The run.sh file executes everything.
 1. WordCloudGenerator.py .. This reads the contents.txt file, generates a wordcloud, dithers the image to make it E-Ink compatible and finally publishes it to the display.
+
 2. AzureSpeechCC (C#) ..... This launches the speech to text service. The recognized phrases are published to the contents.txt file. The individiual words are send to the PiOLED via a pipe.
+
 3. write_to_oled.py ....... This opens the pipe with AzureSpeechCC and prints the words to the display.
+
 4. reset_button.py ........ This runs a script that deletes the contents.txt file when a button is pushed.
+   
 5. WifiStatusLED.py ....... This runs a script to light an LED when connected to the internet.
 
 
 ******************************************************************************
-BUGS
+## BUGS
 
-initrims Issue fix:
+**initrims Issue fix:**
+
+```
 fsck -y /dev/______
 exit
+```
 
  ******************************************************************************
-USEFUL COMMANDS FOR DEBUGGING
+## USEFUL COMMANDS FOR DEBUGGING
 
-ps -fA | grep python3 - 		Show all python scripts running
-Top					Show all programs running
-journalctl -f -u wordcloud.service	Print speech/text and process stuff in terminal
+**Show all python scripts running**
+```
+ps -fA | grep python3 - 		
+```
+**Show all programs running**
+```
+Top
+```
+**Print speech/text and process stuff in terminal**
+```					
+journalctl -f -u wordcloud.service	
+```
 
 To escape the wordcloud generator in terminal use CTL Z
+
 To escape the other scripts in terminal press CTL C
