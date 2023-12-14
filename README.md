@@ -106,7 +106,7 @@ network:
             dhcp4: true
 ```
 
-4. Once ready, apply the changes and connect to your wireless interface by executing the bellow command:
+**3. Once ready, apply the changes and connect to your wireless interface by executing the bellow command:**
 
 ```
 $ sudo netplan apply
@@ -117,14 +117,16 @@ LANGUAGE CHANGE
 
 All languages supported are here: https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt-tts
 
-In dataplicity type:
+**In dataplicity type:**
+```
 su wordcloud
 (enter password - wordcloud)
 sudo nano /home/wordcloud/WordCloud/AzureSpeechCC/Program.cs
+```
 
-Now comment/uncomment the language you want using // and delete the // infront of the languages you do not want. Other languages can be added in here easily - see the full list here.
+**Now comment/uncomment the language you want using // and delete the // infront of the languages you do not want. Other languages can be added in here easily - see the full list here.**
 
-
+```
 var speechConfig = SpeechConfig.FromSubscription(YourSubscriptionKey, YourServiceRegion);
         // Swiss German
         //speechConfig.SpeechRecognitionLanguage = "de-CH";
@@ -133,13 +135,14 @@ var speechConfig = SpeechConfig.FromSubscription(YourSubscriptionKey, YourServic
         // English
         speechConfig.SpeechRecognitionLanguage = "en-US";
 
+```
 
-
-After editing the dotnet file (Program.cs) it first needs to complie, to do this type the following into terminal
+**After editing the dotnet file (Program.cs) it first needs to complie, to do this type the following into terminal**
+```
 dotnet clean
 dotnet build
 dotnet run
-
+```
  ******************************************************************************
  AUTO RUN ON STARTUP
  
