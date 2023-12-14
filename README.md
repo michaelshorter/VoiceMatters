@@ -148,28 +148,36 @@ dotnet run
  
  This is done using systemd
 There are two start-up files:
+```
 wordcloud.service
+```
+```
 Startup.service
+```
 
  To edit this file go:
+ ```
  sudo nano etc/systemd/system/wordcloud.service
- 
+ ```
+
  Once saved run the following:
+ ```
  sudo systemctl daemon-reload
  sudo systemctl start wordcloud.service		This runs the run.sh file
  sudo systemctl enable wordcloud.service	This enables the service file to run on startup
-
+```
 
 To debug it’s useful to look at:
+```
  sudo systemctl status wordcloud.service
-
+```
 		
  
- TO TURN OF AUTO RUN
- 
+ ## TO TURN OF AUTO RUN
+ ```
  sudo systemctl stop wordcloud.service		This stops the service file running in terminal
  sudo systemctl disable wordcloud.service	This stops the service file running on startup
- 
+ ```
 
  ******************************************************************************
 ## GENERAL PROCESS
