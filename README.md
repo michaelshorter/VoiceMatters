@@ -67,8 +67,8 @@ Password: InUniform
 To add a wifi network to the WordCLoud follow the instructions on [this link] (https://linuxconfig.org/ubuntu-20-04-connect-to-wifi-from-command-line)
 
 
-1. First step is to identify the name of your wireless network interface. To do so execute:
-2. 
+**1. First step is to identify the name of your wireless network interface. To do so execute:**
+
 ```
 $ ls /sys/class/net
 enp0s25  lo  wlp3s0
@@ -76,7 +76,9 @@ enp0s25  lo  wlp3s0
 
 Depending on your Ubuntu 20.04 system the wireless network interface name would be something like: wlan0 or like in this case it is wlp3s0.
 
-2. Next, navigate to the /etc/netplan directory and locate the appropriate Netplan configuration files. The configuration file might have a name such as 01-network-manager-all.yaml or 50-cloud-init.yaml.
+**2. Next, navigate to the /etc/netplan directory and locate the appropriate Netplan configuration files.**
+
+The configuration file might have a name such as 01-network-manager-all.yaml or 50-cloud-init.yaml.
    
 ```
 $ ls /etc/netplan/
