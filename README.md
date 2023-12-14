@@ -22,18 +22,18 @@ The WordCloud, Uberblick and Confidence all in one place.... in cardboard boxes.
   ******************************************************************************
 ## HOW TO CLONE FROM GITHUB
 
-1. delete the folder WordCloud on your device
+**1. delete the folder WordCloud on your device**
 
-2. Make sure that you've got an ssh key on your device 
+**2. Make sure that you've got an ssh key on your device**
 if not, do following:
 The first step involves creating a set of RSA keys for use in authentication.
 This should be done on the client.
 To create your public and private SSH keys on the command-line:
-
+'''
 $ mkdir ~/.ssh
 $ chmod 700 ~/.ssh
 $ ssh-keygen
-
+'''
 You will be prompted for a location to save the keys, and a passphrase for the keys. This passphrase will protect your private key while it's stored on the hard drive:
 
 Generating public/private rsa key pair.
