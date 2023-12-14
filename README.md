@@ -5,10 +5,8 @@ The WordCloud, Uberblick and Confidence all in one place.... in cardboard boxes.
 ## HOW TO RUN ALL SCRIPTS
 
 ### Cost and Word Count.
-'''	
-python3 WordCount.py
-python3 CostCounter.py
-'''
+	python3 WordCount.py
+	python3 CostCounter.py
 
 ### Last Word + Confidence
    	/AzureSpeechCC/ dotnet run
@@ -22,7 +20,7 @@ python3 CostCounter.py
    	Then open all the .png files 
 
   ******************************************************************************
-HOW TO CLONE FROM GITHUB
+## HOW TO CLONE FROM GITHUB
 
 1. delete the folder WordCloud on your device
 
