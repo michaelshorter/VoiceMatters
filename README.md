@@ -58,32 +58,37 @@ $ git clone <link> 'WordCloud'
 **NETWORK NAME THAT UBEERBLICKS REMEMBER:**
 
 SSID: Uniform Go 5
+
 Password: InUniform
 
   ******************************************************************************
 ## ADD NEW WIFI CREDENTIALS
 
-To add a wifi network to the WordCLoud follow the instructions on this link:
-https://linuxconfig.org/ubuntu-20-04-connect-to-wifi-from-command-line
+To add a wifi network to the WordCLoud follow the instructions on [this link] (https://linuxconfig.org/ubuntu-20-04-connect-to-wifi-from-command-line)
 
 
 1. First step is to identify the name of your wireless network interface. To do so execute:
-
+2. 
+```
 $ ls /sys/class/net
 enp0s25  lo  wlp3s0
+```
 
 Depending on your Ubuntu 20.04 system the wireless network interface name would be something like: wlan0 or like in this case it is wlp3s0.
 
 2. Next, navigate to the /etc/netplan directory and locate the appropriate Netplan configuration files. The configuration file might have a name such as 01-network-manager-all.yaml or 50-cloud-init.yaml.
-
+   
+```
 $ ls /etc/netplan/
 
 3. Edit the Netplan configuration file:
    
 $ sudoedit /etc/netplan/50-cloud-init.yaml
+```
 
 and insert the following configuration stanza while replacing the SSID-NAME-HERE and PASSWORD-HERE with your SSID network name and password. Make sure that the wifis block is aligned with the above ethernets or version block if present. The entire configuration file may look similar to the one below:
 
+```
 network:
     ethernets:
         eth0:
@@ -97,11 +102,13 @@ network:
                 "SSID-NAME-HERE":
                     password: "PASSWORD-HERE"
             dhcp4: true
+```
 
 4. Once ready, apply the changes and connect to your wireless interface by executing the bellow command:
 
+```
 $ sudo netplan apply
-
+```
 
  ******************************************************************************
 LANGUAGE CHANGE
