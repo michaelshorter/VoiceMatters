@@ -212,8 +212,8 @@ Top
 journalctl -f -u wordcloud.service	
 ```
 
-To escape the wordcloud generator in terminal use CTL Z
+To escape the wordcloud generator in terminal use 
 <kbd>Ctrl</kbd> + <kbd>Z</kbd>
 
-To escape the other scripts in terminal press CTL C
+To escape the other scripts in terminal press 
 <kbd>Ctrl</kbd> + <kbd>C</kbd>
